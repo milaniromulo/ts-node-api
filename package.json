@@ -9,7 +9,7 @@
     "start:dev": "ts-node-dev src/index.ts",
     "lint": "eslint ./src ./test --ext .ts",
     "lint:fix": "eslint ./src ./test --ext .ts --fix",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:unit": "jest",
     "test:functional": "jest --projects ./test --runInBand"
   },
   "repository": {
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/milaniromulo/ts-node-api#readme",
   "devDependencies": {
+    "@types/axios": "^0.14.0",
     "@types/express": "^4.17.8",
     "@types/jest": "^26.0.13",
     "@types/module-alias": "^2.0.0",
@@ -38,6 +39,7 @@
   },
   "dependencies": {
     "@overnightjs/core": "^1.7.4",
+    "axios": "^0.20.0",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "module-alias": "^2.2.2"
