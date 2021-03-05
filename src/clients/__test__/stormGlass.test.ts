@@ -59,7 +59,7 @@ describe('StormGlass client', () => {
         const lat = -33.45454;
         const lng = 165.45454;
 
-        MockedRequestClass.isRequestError.mockRejectedValue(true);
+        MockedRequestClass.isRequestError.mockReturnValue(true);
         mockedRequest.get.mockRejectedValue({
             response:{
                 status: 429,
