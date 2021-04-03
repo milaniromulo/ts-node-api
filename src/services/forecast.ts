@@ -13,7 +13,7 @@ export interface Beach{
     position: BeachesPosition,
     lat: Number,
     lng: Number,
-    user: String
+    // user: String
 }
 
 export interface Timeforecast{
